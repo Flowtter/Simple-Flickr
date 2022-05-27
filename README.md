@@ -1,7 +1,7 @@
 # EPITA
-This is the project that I created in 48 hours for my school. The goal was to create a simple frontend for flickr in Angular.
-This is the first time that I use Angular, and some things might be controversial.
-The project is not graded on the style. Some choices are just timesavers.
+This is the project that I created in 48 hours for my school. The goal was to create a simple frontend for flickr in Angular.\
+This is the first time that I use Angular, and some things might be controversial.\
+The project is not graded on the style. Some choices are just **timesavers.**
 
 ![menu](/assets/menu.png)
 ![info](/assets/info.png)
