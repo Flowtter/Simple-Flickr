@@ -1,0 +1,17 @@
+<div class="root">
+    <!-- this should NOT be a component since it is use only once -->
+    <div class="top-bar">
+        <input type="text" id="key" name="key" required class="api-key" placeholder="api key" [(ngModel)]="apikey">
+        <button class="go" type="button" (click)="more()">more</button>
+        <button class="go" type="button" (click)="next(true)">></button>
+        <button class="go" type="button" (click)="next(false)"><</button>
+        <button class="go" type="button" (click)="query()">go</button>
+        <input type="text" id="search" name="search" required class="search-bar" placeholder="old sport car" [(ngModel)]="search">
+    </div>
+    <app-more-param [showMore]="showMore" (query)="receiveNewValue($event)"></app-more-param>
+    <div class="content">
+        <div *ngFor="let photo of currentPhotos">
+            <app-photo-single path="{{photo}}" apikey="{{apikey}}"></app-photo-single>
+        </div>
+    </div>
+</div>

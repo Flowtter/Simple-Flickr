@@ -1,0 +1,5 @@
+<div class="photo">
+    <img src="{{path}}">
+    <button (click)="info()" class="info">I</button>
+    <app-photo-info [show]="showInfo" [author]="author" [photoName]="photoName" [nbComments]="nbComments" [path]="path" [allComments]="allComments" [currentComment]="currentComment" [currentCommentAuthor]="currentCommentAuthor"></app-photo-info>
+</div>

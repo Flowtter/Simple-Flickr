@@ -1,0 +1,42 @@
+<div class="root" *ngIf="showMore">
+    <button type="button" (click)="close()" class="close">X</button>
+    <div class="holder">
+        <!-- I could have created a component but for something that simple I didnt find it useful -->
+        <div class="form">
+            <label>
+            Lattitude
+            <input [(ngModel)]="lat" (input)="onChange()" type="number" />
+        </label>
+            <label>
+            Date minimum d'upload
+            <input [(ngModel)]="min_upload_date" (input)="onChange()" type="date" />
+        </label>
+            <label>
+            Tag mode
+            <input [(ngModel)]="tag_mode" (input)="onChange()" type="text" />
+        </label>
+            <label>
+            Recherche sécurisé
+            <input [(ngModel)]="safe_search" (input)="onChange()" type="text" />
+        </label>
+        </div>
+        <div class="form">
+            <label>
+            Longitude
+            <input [(ngModel)]="lon" (input)="onChange()" type="number" />
+        </label>
+            <label>
+            Date maximum d'upload
+            <input [(ngModel)]="max_upload_date" (input)="onChange()" type="date" />
+        </label>
+            <label>
+            Trier
+            <input [(ngModel)]="sort" (input)="onChange()" type="text" />
+        </label>
+            <label>
+            Dans une galerie
+            <input [(ngModel)]="in_gallery" (input)="onChange()" type="text" />
+        </label>
+        </div>
+    </div>
+</div>

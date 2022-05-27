@@ -1,0 +1,42 @@
+.photo {
+    width: 20vw;
+    height: 25vh;
+    background-color: #f5a52a;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    img {
+        width: 94%;
+        height: 90%;
+        object-fit: cover;
+        margin: auto;
+        display: block;
+        border-radius: 15px;
+    }
+    position: relative;
+    .info {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 50px;
+        width: 50px;
+        border-radius: 15px 0 15px 0;
+    }
+    button {
+        text-align: center;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        background-color: #f5a52a;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: #f0f0f0;
+        font-size: large;
+    }
+    button:hover {
+        transition: all 0.2s;
+        background-color: #ac7523;
+    }
+}

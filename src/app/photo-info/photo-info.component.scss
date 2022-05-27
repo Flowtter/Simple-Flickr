@@ -1,0 +1,99 @@
+.root {
+    z-index: 50;
+    background-color: #1b222f;
+    margin: 5vh 5vw;
+    width: 90vw;
+    height: 82vh;
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .close {
+        float: right;
+        right: 0px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0 5px 0 0;
+        background-color: #e74c3c;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: #f0f0f0;
+        font-size: large;
+    }
+    button:hover {
+        transition: all 0.2s;
+        background-color: #c0392b;
+    }
+    .photo {
+        width: 35vw;
+        height: 35vh;
+        background-color: #141b23;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        margin: auto;
+        top: 10px;
+        img {
+            width: 94%;
+            height: 90%;
+            object-fit: cover;
+            margin: auto;
+            display: block;
+            border-radius: 15px;
+        }
+        position: relative;
+    }
+    .info {
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+    }
+    .comment-section {
+        // background-color: red;
+        width: 100%;
+        height: calc(100% - 480px - 10px);
+        color: white;
+        .intro {
+            padding-left: 3vw;
+            font-size: 3em;
+        }
+        hr {
+            margin-top: -30px;
+            border: 1px solid white;
+        }
+        .comment-author {
+            padding-left: 3vw;
+            font-size: 1.5em;
+        }
+        .comment {
+            padding-left: 3vw;
+            font-size: 1.2em;
+            height: calc(82vh - 35vh - 25vh + 8%);
+            overflow: hidden;
+            vertical-align: middle;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .go {
+        float: right;
+        right: 0px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        background-color: #f5a52a;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: #f0f0f0;
+        font-size: large;
+        margin: 0 10px 0 0;
+    }
+    .go:hover {
+        transition: all 0.2s;
+        background-color: #ac7523;
+    }
+}
